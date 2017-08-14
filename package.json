@@ -1,16 +1,13 @@
 {
-  "name": "appinterface",
+  "name": "TestCards",
   "version": "1.0.0",
-  "description": "",
-  "main": "appfile.js",
-  "dependencies": {
-    "apiai": "^4.0.2",
-    "body-parser": "1.17.2",
-    "express": "^4.11.2",
+  "description": "to create test cards",
+  "main": "index.js",
 
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1"
+  "dependencies": {
+   "apiai": "^2.0.5",
+   "body-parser": "^1.15.1",
+   "express": "^4.13.4"
   },
   "scripts": {
     "start": "node app.js"
