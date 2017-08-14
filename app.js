@@ -16,14 +16,7 @@ var options = {
    app.post('/',function(req,res){
       console.log('Received the request & it is:::'+JSON.stringify(req.body));
       if(req.body.result.action=='CreditCard'){
-    /*  if(req.body.result.parameters.location1){
-        var resagent="Sure, will check for tkts from " + req.body.result.parameters.location+ " to "+
-        req.body.result.parameters.location1+
-        "   for "+ req.body.result.parameters.date +"   How would you like to travel?by flight,train or bus.....";
-      }else{
-        var resagent="Alright, will check for tkts to " + req.body.result.parameters.location+
-        "   for"+ req.body.result.parameters.date +"   How would you like to travel?by flight,train or bus.....";
-      }*/
+    
       var resagent='Your Credit card request has been placed';
       console.log('request are'+resagent);
       return res.json({
