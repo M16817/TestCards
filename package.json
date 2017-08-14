@@ -1,0 +1,28 @@
+{
+  "name": "appinterface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "appfile.js",
+  "dependencies": {
+    "apiai": "^4.0.2",
+    "body-parser": "1.17.2",
+    "express": "^4.11.2",
+
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShrutiVi-hexaware/TestCards.git"
+  },
+  "author": "shruti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShrutiVi-hexaware/TestCards/issues"
+  },
+  "homepage": "https://github.com/ShrutiVi-hexaware/TestCards#readme"
+}
