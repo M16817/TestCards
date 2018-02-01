@@ -15,16 +15,16 @@ app.use(bodyParser.json());
       console.log('Received the request & it is:::'+JSON.stringify(req.body));
       if(req.body.result.action=='input.personaldetails'){
     
-      //var resagent='Your Ticket has been booked for'+req.body.result.contexts.parameters.Destination+' on '+req.body.result.contexts.parameters.date;
-     // console.log('request are'+resagent);
-      /*return res.json({
+      var resagent='Your Ticket has been booked ';
+     console.log('request are'+resagent);
+      return res.json({
         speech:resagent,
         displayText: resagent,
         source:'Flight Booking'
-      });*/
+      });
 
 
-      var facebookResponse={
+     /* var facebookResponse={
         "speech": "",
         "displayText": " Your Ticket has been booked",
         "data": {
@@ -59,7 +59,7 @@ app.use(bodyParser.json());
         "source": "DuckDuckGo"
       };
 
-return facebookResponse;
+return facebookResponse;*/
 
 }else if (req.body.result.action=='DebitCard'){
 
