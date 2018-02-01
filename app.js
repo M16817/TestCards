@@ -15,13 +15,13 @@ app.use(bodyParser.json());
       console.log('Received the request & it is:::'+JSON.stringify(req.body));
       if(req.body.result.action=='input.personaldetails'){
     
-      var resagent='Your Ticket has been booked ';
+     /* var resagent='Your Ticket has been booked ';
      console.log('request are'+resagent);
       return res.json({
         speech:resagent,
         displayText: resagent,
         source:'Flight Booking'
-      });
+      });*/
 
 
      /* var facebookResponse={
