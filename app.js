@@ -17,13 +17,49 @@ app.use(bodyParser.json());
     
       var resagent='Your Ticket has been booked for'+req.body.result.contexts.parameters.Destination+' on '+req.body.result.contexts.parameters.date;
       console.log('request are'+resagent);
-      return res.json({
+      /*return res.json({
         speech:resagent,
         displayText: resagent,
         source:'Flight Booking'
-      });
+      });*/
 
 
+      var facebookResponse={
+        "speech": "",
+        "displayText": " Your Ticket has been booked",
+        "data": {
+          "facebook": {
+
+            "attachment": {
+                  "type": "template",
+                  "payload": {
+                  "template_type": "generic",
+                  "elements": [
+                    {
+                      "title": "Booking Successful",
+                      "subtitle": 'Your Ticket has been booked for'+req.body.result.contexts.parameters.Destination+' on '+req.body.result.contexts.parameters.date,
+                      "buttons": [
+                        {
+                          "type": "postback",
+                          "title": "Book Another Ticket",
+                          "payload": "book_ticket"
+                        },
+                        {
+                          "type": "postback",
+                          "title": "Contact Us",
+                          "payload": "contact_us"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+        "source": "DuckDuckGo"
+      };
+
+return facebookResponse;
 
 }else if (req.body.result.action=='DebitCard'){
 
