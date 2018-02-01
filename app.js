@@ -8,21 +8,19 @@ var portC = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
-var options = {
-    sessionId: '567yh8'
-};
+
 
 
    app.post('/',function(req,res){
       console.log('Received the request & it is:::'+JSON.stringify(req.body));
-      if(req.body.result.action=='CreditCard'){
+      if(req.body.result.action=='input.personaldetails'){
     
-      var resagent='Your Credit card request has been placed';
+      var resagent='Your Ticket has been booked';
       console.log('request are'+resagent);
       return res.json({
         speech:resagent,
         displayText: resagent,
-        source:'Test Cards'
+        source:'Flight Booking'
       });
 
 
