@@ -15,8 +15,8 @@ app.use(bodyParser.json());
       console.log('Received the request & it is:::'+JSON.stringify(req.body));
       if(req.body.result.action=='input.personaldetails'){
     
-      var resagent='Your Ticket has been booked for'+req.body.result.contexts.parameters.Destination+' on '+req.body.result.contexts.parameters.date;
-      console.log('request are'+resagent);
+      //var resagent='Your Ticket has been booked for'+req.body.result.contexts.parameters.Destination+' on '+req.body.result.contexts.parameters.date;
+     // console.log('request are'+resagent);
       /*return res.json({
         speech:resagent,
         displayText: resagent,
@@ -37,7 +37,7 @@ app.use(bodyParser.json());
                   "elements": [
                     {
                       "title": "Booking Successful",
-                      "subtitle": 'Your Ticket has been booked for'+req.body.result.contexts.parameters.Destination+' on '+req.body.result.contexts.parameters.date,
+                      "subtitle": 'Your Ticket has been booked,
                       "buttons": [
                         {
                           "type": "postback",
