@@ -37,7 +37,7 @@ app.use(bodyParser.json());
                   "elements": [
                     {
                       "title": "Booking Successful",
-                      "subtitle": 'Your Ticket has been booked,
+                      "subtitle": 'Your Ticket has been booked',
                       "buttons": [
                         {
                           "type": "postback",
